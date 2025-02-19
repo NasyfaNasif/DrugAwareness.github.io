@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #000;
+    overflow-x: hidden;
+    font-weight: 500;
+    min-width: 320px;
+}
+header {
+    background-color: #6f7073;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    padding: 22px 60px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #e5e3e4
+}
+header nav {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+header nav a {
+    margin: 10px;
+    color: #e5e3e4;
+    text-decoration: none;
+}
+header nav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+div.mobile{
+    height: 500px;
+    width: 250px;
+    background: #fff;
+    overflow: scroll;
+    position:absolute;
+    right: 0;
+    display: none;
+}
+div#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+/* div.mobile::-webkit-scrollbar {
+    width: 0px; 
+} */
+
+div.mobile ul li{
+    width: 200px;
+}
+div.mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu{
+    position:absolute;
+    z-index: 1;
+    top: 49px;
+}
+header nav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+#menu {
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+}
+#spotlight {
+    padding: 50px; 
+    height: 80vh;
+    width: 100%;
+    background: url(../images/drug.jpg) no-repeat;
+    background-size: cover;
+}
+#spotlight .wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#spotlight .wrapper div.term {
+    padding: 150px;
+}
+#spotlight .wrapper div.term h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 50px;
+}
+#spotlight .wrapper div.term p {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+#spotlight .wrapper div.term button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#facts {
+    padding: 50px; 
+}
+#facts .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#facts .wrapper div.fact{
+    margin-bottom: 50px;
+}
+#facts .wrapper div.fact table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#facts .wrapper div.fact table thead tr {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+#facts .wrapper div.fact table thead tr th {
+    padding: 10px;
+}
+#facts .wrapper div.fact table tbody tr {
+    padding: 10px;
+}
+#facts .wrapper div.fact table tbody tr td {
+    border: 1px solid #ddd;
+}
+#quote {
+    padding: 70px 0;
+    background:#f8bb98 ;
+}
+#quote section.wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+#quote section.wrapper div.img-container {}
+#quote section.wrapper div.img-container img {
+}
+#quote section.wrapper div.content_box {
+    padding-left: 150px;
+}
+#quote section.wrapper div.content_box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #062479;
+}
+#quote section.wrapper div.content_box p {
+    font-size: 20px;
+    color: #80b897;
+    margin-bottom: 20px;
+}
+#press{
+    padding: 70px 0;
+    background: #6b8795;
+}
+#press section.wrapper {
+    display: flex;
+    gap: 10px;
+}
+#press section.wrapper div.content_box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 20px;
+}
+#press section.wrapper div.content_box p {
+    font-size: 20px;
+    color: #fdd129;
+    margin-bottom: 20px;
+}
+#press section.wrapper div.img-container {
+    width: 100px;
+}
+#press section.wrapper div.img-container img {
+}
+#press section.wrapper div.content_box {
+    padding-left: 150px;
+} 
+#terms {
+    padding: 60px ;
+}
+#terms section.top {
+    display: flex;
+    gap: 300px;
+}
+#terms section.top {
+    margin-bottom: 50px;
+}
+#terms section.top div.item h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+#terms section.top div.item ul {}
+#terms section.top div.item ul li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+#terms section.top div.item ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86acda;
+    margin-bottom: 20px;
+}
+#terms section.top div.item ul a img {
+    width: 30px;
+    gap: 30px;
+    border-radius: 20px;
+}
+footer {
+    background-color: #6f7073;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+@media all and (max-width:1440px ){}
+@media all and (min-width:1024) and (max-width:1439px){
+    #spotlight {
+        padding: 0px;
+        height: 80vh;
+        width: 100%;
+        background: url(../images/drug.jpg) no-repeat;
+        background-size: cover;
+    }
+}
